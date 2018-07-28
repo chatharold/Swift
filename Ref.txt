@@ -1,0 +1,16 @@
+- CLASSES:
+.Are passed by reference: The inhereted properties of the class when initialized and copied to another variable are changeable(mutable).
+.method: A function inside a class.
+.super: lets you call or modify the variables coming from the super class inside the sub class.
+.override: lets you overwrite the methods coming from the super class inside the sub class.
+.init: lets you initialize the declare variables inside the super class.
+
+****************************************************************************************************************************************************
+- STRUCTS:
+.Are passed by value: The main properties of the struct when initialized and copied to another variable is not changed(immutable).
+
+****************************************************************************************************************************************************
+- ENUMS:
+. It allows to create constants while using switch options.
+
+****************************************************************************************************************************************************
