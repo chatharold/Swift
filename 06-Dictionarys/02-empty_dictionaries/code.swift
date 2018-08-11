@@ -18,6 +18,14 @@ managersInfo["Raul"] = "Manager"
 managersInfo["Fran"] = "AM"
 managersInfo["Doug"] = "GM"
 
+// Third way
+var cleaningCrewManager: [String: String] = [:]
+cleaningCrewManager = [
+    "Name": "Carlos",
+    "Age": "55"
+]
+
 // output
-print(managersInfo)
-print(managersInfo["Raul"]!)
+// ["Harold": "Senior", "Dennis": "Senior", "Amid": "AM"]
+// ["Raul": "Manager", "Fran": "AM", "Doug": "GM"]
+// ["Name": "Carlos", "Age": "55"]
