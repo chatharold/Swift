@@ -1,13 +1,30 @@
 import UIKit
 
-// Initializers: long way
-var string = String.init() // ""
-var integer = Int.init() // 0
-var boolean = Bool.init() // false
+// Strings
+var firstStringExample: String = ""
+var secondStringExample = ""
+var thirdStringExample = String()
+var fourthStringExample = String.init()
 
 
-// Initializers: short way
-var string2 = String() // ""
-var integer2 = Int() // ""
-var boolean2 = Bool()
+// Integers
+var firstIntegerExample: Int = 0
+var secondIntegerExample = 0
+var thirdIntegerExample = Int()
+var fourthIntegerExample = Int.init()
 
+
+// Arrays
+var firstArray: [String] = []
+var secondArray = [String]()
+var thirdArrayExample: Array<String> = []
+var fourthArrayExample = Array<String>()
+var fifthArrayExample = Array<String>.init()
+
+
+// Dictionaries
+var firstDictionary = [String:String]()
+var secondDictionary: [String: String] = [:]
+var thirdDictionary: Dictionary<String, String> = [:]
+var fourthDictionary = Dictionary<String, String>()
+var fifthDitionaryExample = Dictionary<String, String>.init()
