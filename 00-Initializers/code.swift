@@ -28,3 +28,12 @@ var secondDictionary: [String: String] = [:]
 var thirdDictionary: Dictionary<String, String> = [:]
 var fourthDictionary = Dictionary<String, String>()
 var fifthDitionaryExample = Dictionary<String, String>.init()
+
+
+// Sets
+var firstSet: Set<String> = []
+var secondSet = Set<Int>()
+
+// Adding to sets
+firstSet = ["Apple", "Banana"]
+secondSet = [1, 2, 3]
