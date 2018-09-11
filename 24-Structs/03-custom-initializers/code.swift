@@ -18,3 +18,27 @@ let doubleNumber =  Number(incrementor: 2)
 
 print(singleNumber.doubled)
 print(doubleNumber.doubled)
+
+
+// OR
+
+
+
+struct Person {
+    var info: String
+    
+    init(name: String) {
+        self.info = name
+    }
+    
+    init(age: Int) {
+        self.info = String(age)
+    }
+}
+
+
+var name = Person(name: "harold")
+var age = Person(age: 34)
+
+print(name.info)
+print(age.info)
