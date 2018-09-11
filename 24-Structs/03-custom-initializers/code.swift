@@ -23,7 +23,7 @@ print(doubleNumber.doubled)
 // OR
 
 
-
+// The both append to info
 struct Person {
     var info: String
     
