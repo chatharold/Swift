@@ -23,7 +23,7 @@ print(doubleNumber.doubled)
 // OR
 
 
-// The both append to info
+// The name and age init properties get appended to info
 struct Person {
     var info: String
     
