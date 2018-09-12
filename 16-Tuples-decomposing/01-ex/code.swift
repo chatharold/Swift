@@ -32,7 +32,7 @@ var get = (firstName: "harold", lastName: "Ramos")
 get.firstName // "harold"
 get.1 // "Ramos"
 
-//type is mutable
+//type is inmutable
 //get.firstName = 23
 
 // Re-assign
