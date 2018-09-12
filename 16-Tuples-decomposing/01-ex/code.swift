@@ -23,3 +23,19 @@ print("Person info =", person)
 let (_, name) = person
 print("Name =", name)
 // print(_) // error
+
+
+
+// MORE
+
+var get = (firstName: "harold", lastName: "Ramos")
+get.firstName // "harold"
+get.1 // "Ramos"
+
+//type is mutable
+//get.firstName = 23
+
+// Re-assign
+var first = get.firstName // "harold"
+var last = get.lastName // "Ramos"
+
