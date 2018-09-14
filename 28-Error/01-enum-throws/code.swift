@@ -2,11 +2,11 @@ enum Password: Error {
     case clearText
 }
 
-func checkPasswordStrength(_ password: String) throws -> Bool {
+func checkPasswordStrength(_ password: String) throws -> String {
     if password == "password" {
         throw Password.clearText
     }
-    return true
+    return "Strong password"
 }
 
 // Error
