@@ -21,3 +21,7 @@ howTo() {
 howTo {
     greeting()
 }
+
+// OR
+
+howTo(greet: greeting)
