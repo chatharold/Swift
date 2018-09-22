@@ -1,19 +1,21 @@
-//Computed properties
-struct Person {
-    var firstName: String
-    var lastName: String
+struct Car {
+    var name: String
+    var condition: String
 
-    var name: String {
-        return firstName
-    }
-
-    var last: String {
-        return lastName
+    var conditionStatus: String {
+        if condition == "new" {
+            return "Zero miles"
+        }
+        else {
+            return "Used car"
+        }
     }
 }
 
-let harold = Person(firstName: "Harold", lastName: "Ramos")
 
+let toyota = Car(name: "Toyota", condition: "old")
 
-print(harold.name)
-print(harold.last)
+// Output
+print(toyota.name)
+print(toyota.condition)
+print(toyota.conditionStatus)
