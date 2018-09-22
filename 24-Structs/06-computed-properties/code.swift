@@ -1,21 +1,21 @@
 struct Car {
-    var name: String
-    var condition: String
-
-    var conditionStatus: String {
-        if condition == "new" {
-            return "Zero miles"
+    var model: String
+    var state: String
+    
+    var stateStatus: String {
+        if state == "ON" {
+            return "Start driving"
         }
         else {
-            return "Used car"
+            return "Turn on the car"
         }
     }
 }
 
 
-let toyota = Car(name: "Toyota", condition: "old")
+let nissan = Car(model: "Nissan", state: "On")
 
-// Output
-print(toyota.name)
-print(toyota.condition)
-print(toyota.conditionStatus)
+print("Model = \(nissan.model)") // Model = Nissan
+print("State = \(nissan.state)") // State = On
+print("Status = \(nissan.stateStatus)") // Status = Turn on the car
+
