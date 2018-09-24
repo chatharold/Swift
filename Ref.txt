@@ -39,6 +39,6 @@
 
 - STATIC KEYWORD:
 . The property name with static gets attached onto the the type
-. struct/class.propertyName
+. class.propertyName
 
 ****************************************************************************************************************************************************
