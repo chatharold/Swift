@@ -29,3 +29,27 @@ class ViewController: UIViewController{
     }
     
 }
+
+
+// OR 
+
+// init Variable Instances
+    var audioPlayer: AVAudioPlayer!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+
+    @IBAction func notePressed(_ sender: UIButton) {
+        // create path
+        let pathURL = Bundle.main.url(forResource: "note\(sender.tag)", withExtension: "wav")
+        
+        do {
+            audioPlayer = try AVAudioPlayer(contentsOf: pathURL!)
+        }
+        catch {
+            print("Error loading te file")
+        }
+        
+        audioPlayer.play()
+    }
