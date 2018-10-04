@@ -1,3 +1,4 @@
+// EX1
 // Superclass
 class Person {
     var name: String
@@ -23,3 +24,29 @@ class Student: Person {
 
 var harold = Student(name: "Harold Ramos", age: 34, favoriteSubject: "Programming")
 print("Info = \(harold.name), \(harold.age), \(harold.favoriteSubject)")
+
+
+// EX2
+class Device {
+    
+    var name: String
+    
+    init(name: String) {
+        self.name = name
+    }
+    
+}
+
+
+class Iphone: Device {
+    
+    init() {
+        let name: String = "IPHONE"
+        super.init(name: name)
+    }
+    
+}
+
+let iphone = Iphone()
+
+print(iphone.name)
