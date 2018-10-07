@@ -42,3 +42,11 @@
 . class.propertyName
 
 ****************************************************************************************************************************************************
+
+- THIRD PARTY LIBRARY:
+. import to supporting files
+. create a bridging header
+. inside the bridging header: # import "librayName.h"
+. inside ViewController import Foundation and use it.
+
+****************************************************************************************************************************************************
