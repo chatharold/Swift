@@ -9,9 +9,10 @@ class Box {
 }
 
 
-let bigOne = Box(checkBox: "Full")
+let bigOne = Box(checkBox: nil)
 
 // Unused way
+// if nil it could crash
 if bigOne.checkBox != nil {
     print(bigOne.checkBox!)
 }
@@ -20,6 +21,7 @@ else {
 }
 
 // Preferred optional binding
+// Only execute if a value is present. So it is safer
 if let nothing = bigOne.checkBox {
     print(nothing)
 }
