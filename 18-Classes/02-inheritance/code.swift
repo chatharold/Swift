@@ -1,6 +1,7 @@
 // Inheritance lets us eliminate redundancy
 // Methods and properties from the superclass get inhereted by the subclass
 
+// Ex1
 // Superclass
 class Car {
 
@@ -42,3 +43,43 @@ let myNewCar = FutureCar()
 
 myNewCar.drive()
 myNewCar.fly()
+
+
+// Ex2
+
+
+class Animal {
+   
+    var name: String
+    
+    init(name: String) {
+        self.name = name
+    }
+    
+    func move() {
+        print("By: Walking")
+    }
+    
+}
+
+
+let dog = Animal(name: "Lucky")
+print("Name = \(dog.name)")
+
+dog.move()
+
+
+class Fish: Animal {
+    override func move() {
+        // Calls the superClass move method
+        super.move()
+        
+        // Executes the overwritten method
+        print("By: Swimming")
+    }
+}
+
+let seaHorse = Fish(name: "SeaHorse")
+print(seaHorse.name)
+seaHorse.move()
+
