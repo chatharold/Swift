@@ -11,8 +11,7 @@ class Box {
 
 let bigOne = Box(checkBox: "Full")
 
-// Preferred optional binding
-
+// Unused way
 if bigOne.checkBox != nil {
     print(bigOne.checkBox!)
 }
@@ -20,7 +19,7 @@ else {
     print("Empty")
 }
 
-// Unused way
+// Preferred optional binding
 if let nothing = bigOne.checkBox {
     print(nothing)
 }
