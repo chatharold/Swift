@@ -5,10 +5,10 @@ enum Model {
 }
 
 class Car {
-    
-    var year: Int
-    var color: String
-    var make: Model
+    // Default value gets overwriten by init()
+    var year: Int = 0
+    var color: String = "Black"
+    var make: Model = .Totoya
     
     init(year: Int, color: String, make: Model) {
         self.year = year
@@ -20,4 +20,4 @@ class Car {
 
 let chevy = Car(year: 2018, color: "Gry", make: .Chevy)
 
-chevy.make
+print(chevy.make)
