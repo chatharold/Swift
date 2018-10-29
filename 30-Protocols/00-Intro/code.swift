@@ -1,5 +1,6 @@
 import UIKit
 
+// Protocols work like a contract
 protocol Married {
     func promise(oath: String)
 }
